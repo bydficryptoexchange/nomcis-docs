@@ -332,6 +332,18 @@
                         <td>Mandatory</td>
                         <td>An array containing 2 elements. The ask price and quantity for each ask order</td>
                     </tr>
+		    <tr>
+                        <td>avgResTimeMs</td>
+                        <td>Long</td>
+                        <td>Mandatory</td>
+                        <td> avg response time.ms</td>
+                    </tr>
+		      <tr>
+                        <td>invoke</td>
+                        <td>boolean</td>
+                        <td>Mandatory</td>
+                        <td> true invoke history  'false' is not invoke  </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
@@ -344,7 +356,9 @@
 		"bids": [40222, 11],
 		"timestamp": "2022-03-22T15:29:32.465Z"
 
-	}
+	},
+	"avgResTimeMs": "33",
+    	"invoke": false
 }
 </code></pre>
                 </div>
@@ -445,7 +459,18 @@
                         <td>Mandatory</td>
                         <td>  timestamp of the start of the candle in RFC3339 aligned to candle size in UTC</td>
                     </tr>
-
+		    <tr>
+                        <td>avgResTimeMs</td>
+                        <td>Long</td>
+                        <td>Mandatory</td>
+                        <td> avg response time.ms</td>
+                    </tr>
+		      <tr>
+                        <td>invoke</td>
+                        <td>boolean</td>
+                        <td>Mandatory</td>
+                        <td> true invoke history  'false' is not invoke  </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="language-javascript extra-class"><pre class="language-javascript"><code>    # Response
@@ -579,7 +604,9 @@
 		"id": "MATICUSDT",
 		"quote": "USDT",
 		"type": "spot"
-	}]
+	}],
+	"avgResTimeMs": "33",
+    	"invoke": false
 }
 
 </code></pre>
