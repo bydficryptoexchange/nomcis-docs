@@ -461,7 +461,9 @@
 		"timestamp": "2022-03-22T09:00:00.000Z",
 		"volume": 55304.0,
 		"volume_quote": null
-	}]
+	}],
+	 "avgResTimeMs": "33",
+    	 "invoke": false
 }
 
 </code></pre>
@@ -552,7 +554,18 @@
                         <td>Mandatory</td>
                         <td> The quote symbol</td>
                     </tr>
-
+		      <tr>
+                        <td>avgResTimeMs</td>
+                        <td>Long</td>
+                        <td>Mandatory</td>
+                        <td> avg response time.ms</td>
+                    </tr>
+		      <tr>
+                        <td>invoke</td>
+                        <td>boolean</td>
+                        <td>Mandatory</td>
+                        <td> true invoke history  'false' is not invoke  </td>
+                    </tr>
 
                     </tbody>
                 </table>
@@ -662,6 +675,18 @@
                         <td>Mandatory</td>
                         <td>The direction of the trade [buy, sell] </td>
                     </tr>
+		    <tr>
+                        <td>avgResTimeMs</td>
+                        <td>Long</td>
+                        <td>Mandatory</td>
+                        <td> avg response time.ms</td>
+                    </tr>
+		      <tr>
+                        <td>invoke</td>
+                        <td>boolean</td>
+                        <td>Mandatory</td>
+                        <td> true invoke history  'false' is not invoke  </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="language-javascript extra-class"><pre class="language-javascript"><code>    # Response
@@ -678,7 +703,9 @@
 	"side": null,
 	"timestamp": "2022-03-16T10:04:13.000Z",
 	"type": "sell"
-}]
+}],
+    "avgResTimeMs": "33",
+    "invoke": false
 }
 
 </code></pre>
@@ -781,6 +808,18 @@
                         <td>open price of the asset in the quote currency as a string parseable to a positive number
                         </td>
                     </tr>
+		    <tr>
+                        <td>avgResTimeMs</td>
+                        <td>Long</td>
+                        <td>Mandatory</td>
+                        <td> avg response time.ms</td>
+                    </tr>
+		      <tr>
+                        <td>invoke</td>
+                        <td>boolean</td>
+                        <td>Mandatory</td>
+                        <td> true invoke history  'false' is not invoke  </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="language-javascript extra-class"><pre class="language-javascript"><code>    # Response
@@ -794,7 +833,9 @@
 	"low": 39314.1,
 	"ask": "39751.5",
 	"bid": "222"
-}
+},
+    "avgResTimeMs": "33",
+    "invoke": false
 }
 
 </code></pre>
